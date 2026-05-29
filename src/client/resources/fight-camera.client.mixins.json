@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "com.theobald.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "CameraMixin",
+    "CameraAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  },
+  "mixins": [
+    "LivingEntityRendererMixin",
+    "PerspectiveMixin",
+    "PlayerEntityMixin"
+  ]
+}
