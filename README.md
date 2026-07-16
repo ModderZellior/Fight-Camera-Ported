@@ -8,18 +8,18 @@ This repository keeps each Minecraft port on its own branch. Use the branch that
 
 | Minecraft version | Branch |
 | --- | --- |
-| 1.21.2 | [`1.21.2`](https://github.com/ModderZellior/FightCam-Ported/tree/1.21.2) |
-| 1.21.3 | [`1.21.3`](https://github.com/ModderZellior/FightCam-Ported/tree/1.21.3) |
-| 1.21.5 | [`1.21.5`](https://github.com/ModderZellior/FightCam-Ported/tree/1.21.5) |
-| 1.21.6 | [`1.21.6`](https://github.com/ModderZellior/FightCam-Ported/tree/1.21.6) |
-| 1.21.7 | [`1.21.7`](https://github.com/ModderZellior/FightCam-Ported/tree/1.21.7) |
-| 1.21.8 | [`1.21.8`](https://github.com/ModderZellior/FightCam-Ported/tree/1.21.8) |
-| 1.21.9 | [`1.21.9`](https://github.com/ModderZellior/FightCam-Ported/tree/1.21.9) |
-| 1.21.10 | [`1.21.10`](https://github.com/ModderZellior/FightCam-Ported/tree/1.21.10) |
-| 1.21.11 | [`1.21.11`](https://github.com/ModderZellior/FightCam-Ported/tree/1.21.11) |
-| 26.1 | [`26.1`](https://github.com/ModderZellior/FightCam-Ported/tree/26.1) |
-| 26.1.1 | [`26.1.1`](https://github.com/ModderZellior/FightCam-Ported/tree/26.1.1) |
-| 26.1.2 | [`26.1.2`](https://github.com/ModderZellior/FightCam-Ported/tree/26.1.2) |
+| 1.21.2 | [`1.21.2`](https://github.com/ModderZellior/Fight-Camera-Ported/tree/1.21.2) |
+| 1.21.3 | [`1.21.3`](https://github.com/ModderZellior/Fight-Camera-Ported/tree/1.21.3) |
+| 1.21.5 | [`1.21.5`](https://github.com/ModderZellior/Fight-Camera-Ported/tree/1.21.5) |
+| 1.21.6 | [`1.21.6`](https://github.com/ModderZellior/Fight-Camera-Ported/tree/1.21.6) |
+| 1.21.7 | [`1.21.7`](https://github.com/ModderZellior/Fight-Camera-Ported/tree/1.21.7) |
+| 1.21.8 | [`1.21.8`](https://github.com/ModderZellior/Fight-Camera-Ported/tree/1.21.8) |
+| 1.21.9 | [`1.21.9`](https://github.com/ModderZellior/Fight-Camera-Ported/tree/1.21.9) |
+| 1.21.10 | [`1.21.10`](https://github.com/ModderZellior/Fight-Camera-Ported/tree/1.21.10) |
+| 1.21.11 | [`1.21.11`](https://github.com/ModderZellior/Fight-Camera-Ported/tree/1.21.11) |
+| 26.1 | [`26.1`](https://github.com/ModderZellior/Fight-Camera-Ported/tree/26.1) |
+| 26.1.1 | [`26.1.1`](https://github.com/ModderZellior/Fight-Camera-Ported/tree/26.1.1) |
+| 26.1.2 | [`26.1.2`](https://github.com/ModderZellior/Fight-Camera-Ported/tree/26.1.2) |`n| 26.2 | [`26.2`](https://github.com/ModderZellior/Fight-Camera-Ported/tree/26.2) |
 
 ## Commands
 
@@ -106,3 +106,4 @@ FlashBack replay compatibility is currently experimental. The mod detects FlashB
 ## Developer
 
 Ported by Zellior.
+
