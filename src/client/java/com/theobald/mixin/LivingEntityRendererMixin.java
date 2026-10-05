@@ -17,10 +17,10 @@ public abstract class LivingEntityRendererMixin<T extends LivingEntity> {
     @Unique
     LocalPlayer LocalPlayer = Minecraft.getInstance().player;
 
-    @Inject(method = "hasLabel", at = @At("HEAD"), cancellable = true)
-    private void forceRenderNametag(T entity, CallbackInfoReturnable<Boolean> cir) {
+    @Inject(method = "shouldShowName", at = @At("HEAD"), cancellable = true)
+    private void forceRenderNametag(T entity, double distSq, CallbackInfoReturnable<Boolean> cir) {
         if (entity instanceof LocalPlayer && FightCameraClient.active) {
-            cir.setReturnValue(true); // Always show the name tag for the local player
+            cir.setReturnValue(true);
         }
     }
 }

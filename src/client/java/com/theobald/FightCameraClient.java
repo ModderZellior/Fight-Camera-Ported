@@ -21,7 +21,6 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import org.lwjgl.glfw.GLFW;
 
 import java.text.DecimalFormat;
 import java.util.List;
@@ -80,8 +79,8 @@ public class FightCameraClient implements ClientModInitializer {
 
 		var toggleBind = KeyMappingHelper.registerKeyMapping(new KeyMapping(
 				"Toggle Fight Camera",
-				InputConstants.Type.KEYSYM,
-				GLFW.GLFW_KEY_SEMICOLON,
+				InputConstants.Type.KEYBOARD,
+				InputConstants.KEY_SEMICOLON,
 				KeyMapping.Category.register(Identifier.fromNamespaceAndPath("fight-camera", "fightcam"))
 		));
 
@@ -161,6 +160,7 @@ public class FightCameraClient implements ClientModInitializer {
 
 			((com.theobald.mixin.CameraAccessor) camera).fightcam$setPosition(newPos);
 			client.player.setYRot(newYaw);
+			client.player.yRotO = newYaw;
 
 			if (client.player.isSpectator()) {
 				Vec3 spectatorPos = lastTargetPos.lerp(currentTargetPos, tickDelta);
@@ -256,8 +256,10 @@ public class FightCameraClient implements ClientModInitializer {
 				updateGroundHeights();
 			}
 			else {
+				// no valid players, don't leave it armed or it turns itself on later
+				toggled = false;
 				active = false;
-				sendMessage("Fight cam disabled!");
+				sendMessage("Pick 2 players first: /fightcam players <p1> <p2>");
 			}
 		}
 		else {

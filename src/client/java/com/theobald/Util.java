@@ -46,7 +46,9 @@ public class Util
     }
 
     public static float FindAutoDistance(Vec3 playerDist, int fov) {
-        float hFov = fov * FightCameraClient.aspectRatio * .8f;
+        Window window = FightCameraClient.client.getWindow();
+        float aspect = window.getHeight() > 0 ? (float) window.getWidth() / window.getHeight() : 16f / 9f;
+        float hFov = fov * aspect * .8f;
         double hDist = playerDist.horizontalDistance();
         float hAutoDistance = Math.abs((float)((hDist/2) / Math.tan(Math.toRadians((double) hFov/2))));
         if (FightCameraClient.heightMode == FightCameraClient.HeightMode.GROUND) {
